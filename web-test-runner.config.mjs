@@ -2,20 +2,20 @@ import fs from 'fs';
 import { playwrightLauncher } from '@web/test-runner-playwright';
 
 const packages = fs
-  .readdirSync('packages')
+  .readdirSync('components')
   .filter(
-    dir => fs.statSync(`packages/${dir}`).isDirectory() && fs.existsSync(`packages/${dir}/test`),
+    dir => fs.statSync(`components/${dir}`).isDirectory() && fs.existsSync(`components/${dir}/test`),
   )
-  .map(dir => ({ name: dir, path: `packages/${dir}/test` }))
+  .map(dir => ({ name: dir, path: `components/${dir}/test` }))
   .concat(
     fs
-      .readdirSync('packages/ui/components')
+      .readdirSync('components/')
       .filter(
         dir =>
-          fs.statSync(`packages/ui/components/${dir}`).isDirectory() &&
-          fs.existsSync(`packages/ui/components/${dir}/test`),
+          fs.statSync(`components/${dir}`).isDirectory() &&
+          fs.existsSync(`components/${dir}/test`),
       )
-      .map(dir => ({ name: dir, path: `packages/ui/components/${dir}/test` })),
+      .map(dir => ({ name: dir, path: `components/${dir}/test` })),
   );
 // .filter(x => x.endsWith('-dropdown'))
 // .concat(
