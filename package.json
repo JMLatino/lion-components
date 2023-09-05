@@ -1,13 +1,13 @@
 {
-  "name": "@lion/ui",
-  "version": "0.4.0-prerelease-bypass-export-map.0",
-  "description": "A package of extendable web components",
+  "name": "@lion/lion-button",
+  "version": "0.0.1",
+  "description": "A package of button web component",
   "license": "MIT",
   "author": "ing-bank",
-  "homepage": "https://github.com/ing-bank/lion/",
+  "homepage": "https://github.com/ing-bank/lion/button",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ing-bank/lion.git",
+    "url": "https://github.com/JMLatino/lion-components.git",
     "directory": "packages/ui"
   },
   "type": "module",
@@ -16,17 +16,8 @@
       "types": "./dist-types/exports/*",
       "default": "./exports/*"
     },
-    "./calendar-translations/*": "./components/calendar/translations/*",
-    "./combobox-translations/*": "./components/combobox/translations/*",
-    "./pagination-translations/*": "./components/pagination/translations/*",
-    "./progress-indicator-translations/*": "./components/progress-indicator/translations/*",
-    "./input-datepicker-translations/*": "./components/input-datepicker/translations/*",
-    "./input-file-translations/*": "./components/input-file/translations/*",
-    "./input-iban-translations/*": "./components/input-iban/translations/*",
-    "./input-tel-translations/*": "./components/input-tel/translations/*",
-    "./overlays-translations/*": "./components/overlays/translations/*",
-    "./validate-messages-translations/*": "./components/validate-messages/translations/*",
     "./docs/*": "./docs/*"
+
   },
   "files": [
     "*.js",
