@@ -60,3 +60,7 @@ __output
 ## generate-package-exports tests
 packages/ui/new-exports/
 packages/ui/test-exports/
+
+./docs
+vscode.css-custom-data.json
+vscode.html-custom-data.json
