@@ -1,5 +1,5 @@
 {
-  "name": "juan-button",
+  "name": "lion-button",
   "version": "0.0.1",
   "description": "A package of button web component",
   "license": "MIT",
@@ -54,8 +54,6 @@
     "@open-wc/scoped-elements": "^2.1.4",
     "@popperjs/core": "^2.11.6",
     "autosize": "4.0.2",
-    "awesome-phonenumber": "^4.0.0",
-    "ibantools": "^2.2.0",
     "lit": "^2.4.0",
     "singleton-manager": "^1.6.1"
   },
