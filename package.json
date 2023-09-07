@@ -1,5 +1,5 @@
 {
-  "name": "@lion/lion-button",
+  "name": "juan-button",
   "version": "0.0.1",
   "description": "A package of button web component",
   "license": "MIT",
@@ -22,9 +22,6 @@
   "files": [
     "*.js",
     "components",
-    "custom-elements.json",
-    "dist-types",
-    "docs",
     "exports",
     "!custom-elements-manifest.config.js"
   ],
@@ -38,7 +35,7 @@
     "publish-docs": "node ../../packages-node/publish-docs/src/cli.js --github-url https://github.com/ing-bank/lion/ --git-root-dir ../../",
     "prepublishOnly": "npm run types && npm run create-npm-publish-docs && npm run publish-docs && npm run custom-elements-manifest && npm run generate-lion-exports",
     "test": "run-p test:browser test:node",
-    "test:browser": "web-test-runner --coverage",
+    "test:browser": "wtr --config ./tests/config/web-test-runner.config.mjs --coverage",
     "test:node": "npm run test:node --workspaces --if-present",
     "types": "wireit",
     "types-check-only": "tsc --project tsconfig-check-only.json",

@@ -4,6 +4,6 @@
     "outDir": "./dist-types",
     "rootDir": "."
   },
-  "include": ["exports", "components"],
+  "include": ["exports", "src"],
   "exclude": ["dist-types"]
 }

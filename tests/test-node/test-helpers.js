@@ -3,11 +3,11 @@ import { fileURLToPath } from 'url';
 import fs from 'fs-extra';
 import prettier from 'prettier';
 
-import { PublishDocs } from '../index.js';
+import { PublishDocs } from '../../index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-/** @typedef {import('../index').PublishDocsOptions} PublishDocsOptions */
+/** @typedef {import('../../index').PublishDocsOptions} PublishDocsOptions */
 
 /**
  * @param {string} inPath
